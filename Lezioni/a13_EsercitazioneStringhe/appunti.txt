@@ -1,0 +1,28 @@
+Stringhe
+Matrici in C
+
+malloc free calloc realloc
+
+ptr = (cast-type*) malloc(size);
+
+calloc svolge la funzione della malloc ma in più inizializza la memoria a zero
+ptr = (cast-type*) calloc(n, element-size);
+
+realloc ridimensiona l'area di memoria
+ptr=realloc(ptr, new_size);
+memset per inizializzare la memoria (a byte)
+
+Librerie e link di librerie
+mylib.h  header con le intestazioni dei metodi
+mylib.c con le implementazioni dei metodi
+main.c programma principale
+
+gcc -c mylib.c
+gcc -c main.c
+gcc -o main main.o mylib.o
+
+Approfondimenti per librerie statiche e dinamiche
+https://www.di.univr.it/documenti/OccorrenzaIns/matdid/matdid413434.pdf
+
+
+Matrice in C

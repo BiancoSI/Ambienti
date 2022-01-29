@@ -1,0 +1,16 @@
+if [ ! -d $1 ];then
+	echo Errore $0 riceve una cartella e conta il numero di file o cartelle al suo interno
+	exit
+fi
+cartella=$(ls $1)
+numFile=0
+numDir=0
+for ent in $cartella;do
+	if [ -f $ent ];then
+		let numFile=$numFile+1
+	elif [ -d $ent ];then
+		let numDir=$numDir+1
+	fi
+done
+echo Numero di file = $numFile, numero Directory = $numDir.
+ 

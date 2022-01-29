@@ -1,0 +1,34 @@
+Esercizi sulla programmazione Shell di base
+
+1. Editare il file .bashrc aggiungendo una cartella Programmi e la cartella corrente al PATH e e scrivendo un messaggio di benvenuto
+
+Scrivere una serie di programmi shell come da elenco:
+2. Controlla che il numero di argomenti passati sia esattamente 3 (variante: >=3)
+
+3. Controlla che il numero di argomenti passati sia esattamente 2, di cui il primo sia un file e il secondo una cartella (esempio: controlla.sh <file> <cartella> )
+
+4. Conta il numero di file contenuti in un file passato come parametro (contiene un elenco di file)
+
+5. Come il punto 4, ma conta solo quelli presenti nella cartella corrente.
+
+6. Scrive n volte su un file una frase letta da tastiera  (esempio: scrivi.sh <file> <n> )
+
+7. Cancella tutti i file con una certa estensione (letta da input) da una cartella passata come argomento (esempio: pulisci.sh  <cartella> ), variante: leggere più estensioni
+
+8. Trova il massimo di tutti i numeri ricevuti da linea di comando (provare con 3, poi estendere a n).
+
+9. Conta quanti file fra quelli elencati in una variabile sono presenti 
+nella cartella corrente
+
+10. Conta quanti file fra quelli contenuti in un file passato come parametro sono presenti nella cartella corrente (esempio: contaFile.sh <file> 
+
+11. Stampa il nome del file seguito dal suo numero di righe per ogni file contenuto in una cartella passata come parametro
+
+
+12. Contare le occorrenze di una parola in un file passato come parametro (esempio: contaParole.sh <file> <parola> ) Attenzione: usare = per il confronto di stringhe.
+
+13. Effettuare il backup di tutti i file java contenuti in una cartella in un altra cartella (esempio: backup.sh <cartellaOrig> <cartellaDest> )
+
+14. Come il 13, ma fare il backup solo delle prime 50 righe di ogni file
+
+15. Come il 13, ma escludere i commenti dal backup

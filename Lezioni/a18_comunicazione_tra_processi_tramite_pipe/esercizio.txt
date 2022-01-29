@@ -1,0 +1,100 @@
+PIPE
+Canale di comunicazione unidirezionale
+Un processo che scrive (writer)
+Un processo che legge (reader)
+La comunicazione viene gestita tramite un buffer
+La read e la write sono bloccanti
+Paradigma master  - slave (padrone - esecutori )
+
+int pd[2];   // pipe descriptor
+pipe(pd);  // crea la comunicazione (restituisce -1 se si è verificato un errore)
+
+pd[0] -> leggiamo
+pd[1] -> scriviamo
+
+write
+read
+
+close(pd[0]);  // per chiudere il canale in lettura
+
+la pipe deve essere creata prima di fare la fork 
+
+Esempio 1
+Padre
+	legge un intero da std input
+	trasferisce qesto intero tramite pipe al figlio
+	aspetta la terminazione del figlio (wait)
+Figlio
+	Riceve (legge) un intero dal padre
+	scrive il numero su std output
+	termina (exit)
+
+Esempio 2
+Padre
+	legge un intero da std input
+	trasferisce questo intero tramite pipe al figlio
+	aspetta la terminazione del figlio (wait)
+	riceve il risultato del calcolo
+	stampa su std output il valore
+Figlio
+	Riceve (legge) un intero dal padre
+	calcola il doppio del numero ricevuto 
+	manda il valore calcolato al padre
+	termina (exit)
+
+
+P -> F  Unidirezionale  (pipe pdP2F)
+F -> P pipe (pdF2P)
+
+   ________________
+ P      6 9        F
+   ________________
+
+ESERCIZIO
+Calcolo della somma degli elementi di un vettore in parallelo
+Un processo padre crea N figli, ogni figlio calcola la somma parziale su una porzione del vettore 
+e restituisce la somma parziale al padre.
+Il padre al termine calcola la somma totale degli elementi del vettore come somma delle somme parziali
+
+1) Il padre e i figli hanno una copia del vettore di ingresso
+2) Il padre passa il vettore ai figli tramite pipe
+	a) I figli memorizzano un vettore per effettuare i calcoli
+	b) I figli non memorizzano il vettore per effettuare la sommatoria
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

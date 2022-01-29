@@ -1,0 +1,97 @@
+FILE
+creat
+
+open
+int fd;
+fd = open(_ , _ , _);
+O_WRONLY
+O_RDONLY
+O_RDWR
+O_CREAT
+O_APPEND
+|
+0644
+rwx rwx rwx
+110 100 100
+
+write
+read
+
+close(fd);
+
+lseek(_ , _ , _);
+SEEK_SET
+SEEK_CUR  posizione corrente
+SEEK_END fine del file 
+
+10 	20 	30 	40 	50 
+0  	4   	8 	12 	16 	20
+
+Esercizio 3 del compito
+P ed N Figli
+File
+1 Pipe con cui i figli trasferiscono il risultato parziale al padre
+N figli
+P
+Stabilisce il valore di L (il numero di voti presenti nel file) 
+aprendo il file e posizionandosi alla fine (SEEK_END) 
+genera un limite inferiore ed un limite superiore per ogni figlio
+Crea N figli
+aspetta terminazione
+riceve dalla pipe i risultati parziali
+Somma dei risultati parziali provenienti dai figli
+Mostra in output il risultato finale
+
+F
+Apre il file
+si posiziona con lseek sul suo limite inferiore
+legge limte sup - limite inf  elementi
+conta le occorrenze del numero 30
+invia tramite pipe al padre il numero di occorrenze 
+
+
+________________________________
+Variante dell'esercizio 3 del compito
+
+PIPE
+PIPE da P a F18 per trasferire i voti 18
+PIPE da P a F30 per trasferire i voti 30
+
+PIPE da F18 a P per trasferire il numero totale di voti 18
+PIPE da F30 a P per trasferire il numero totale di voti 30
+
+
+
+P
+Apre il file
+crea le pipe
+Crea i figli F18 ed F30
+Legge tutti i voti presenti nel file
+se il voto letto è 18 lo trasferice a F18 tramite pipe
+se il voto letto è 30 lo trasferice a F30 tramite pipe
+Finito di leggere il file 
+	mando il tappo  a F18 tramite pipe
+	mando il tappo  a F30 tramite pipe
+
+Aspetto la terminazione dei figli
+legge il numero di occorrenze dei 18 da F18 tramite la pipe
+legge il numero di occorrenze dei 30 da F30 tramite la pipe
+Visualizza su output
+
+F
+legge dalla pipe i voti fino al tappo e li conta
+scrive il numero di voti ricevuti al padre tramite pipe
+
+
+
+
+
+
+
+
+
+
+
+
+
+

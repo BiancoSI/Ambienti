@@ -1,0 +1,9 @@
+if [ $# -lt 3 ];then
+	echo $0 prende da 3 a n numeri
+	exit
+fi
+somma=0
+for n in $@;do
+	let somma=$somma+$n
+done
+echo Somma = $somma

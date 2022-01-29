@@ -1,0 +1,9 @@
+1) Il padre legge un intero (o un array) lo passa al figlio che fa il quadrato del numero, lo restituisce al padre che lo  stampa su schermo
+
+2) Il padre legge un vettore da tastiera, quindi crea 2 figli F1 e F2, manda i numeri multipli di 2  al figlio F1, i multipli di 3 a F2. F1 calcola la media dei multipli di 2, mentre F2 calcola il massimo dei multipli di 3.
+Per semplicita si suppone che non esista lo 0 fra i numeri letti.
+
+3) Svolgere l'esercizio 1 per 3 figli (considerare multipli di 2, 3 e 4).
+
+4)  Il padre legge un vettore da tastiera, quindi crea 2 figli Fpos e Fneg.
+Il padre passa i numeri positivi a Fpos e i negativi a Fneg. Fpos calcola la media dei numeri positivi e la ritorna al padre che la stampa. Fneg crea un nipote Fnip, gli passa i numeri positivi e Fnip calcola il minimo dei numeri negativi e lo ritorna a Fneg che lo ritorna al padre che lo stampa.

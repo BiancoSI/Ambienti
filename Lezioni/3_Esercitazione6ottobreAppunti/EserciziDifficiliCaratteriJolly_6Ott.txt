@@ -1,0 +1,14 @@
+Testare col comando ls  (caratteri jolly)
+
+1. sono lunghi tre caratteri
+2. iniziano con una lettera, maiuscola o minuscola
+3. contengono una cifra in qualsiasi punto del nome
+4. terminano con un carattere che non sia una cifra
+5. contengono uno spazio vuoto
+6. iniziano con .
+7. iniziano con . e sono lunghi un totale di tre caratteri
+8. contengono almeno un carattere che non sia né una lettera né una cifra
+9. contengono almeno un'istanza di ciascuno di a e q nel nome, in qualsiasi ordine (sono necessari due caratteri jolly
+per fare questo!)
+10. Trova qualsiasi file in una sottodirectory della directory corrente. Il nome del file può essere qualsiasi cosa.
+

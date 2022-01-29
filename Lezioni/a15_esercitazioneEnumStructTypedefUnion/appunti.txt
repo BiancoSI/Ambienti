@@ -1,0 +1,47 @@
+typedef enum struct union
+
+typedef 
+typedef tipo nuovo_tipo;
+
+typedef int intero;
+typedef int eta;
+
+intero x;
+
+
+
+enum
+enum nome_tipo_enumerativo {lista_di_valori};
+enum nome_tipo_enumerativo nome_var;
+
+
+enum boolean {false, true};
+enum boolean trovato;
+
+typedef enum{false, true} boolean;
+               0     1
+  
+struct
+struct nome_struct{
+	tipo campo;
+	...
+};
+
+struct nome_struct nome_var;
+
+nome_var.campo = ...;
+
+typedef struct {
+	tipo campo;
+	...
+} nome_struct;
+
+nome_struct nome_var;
+
+Per i puntatori a struct è possibile utilizzare l'operatore ->
+
+union
+
+
+
+

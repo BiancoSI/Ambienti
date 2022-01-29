@@ -1,0 +1,10 @@
+Salvini.cand Lega.part
+Panzoni.cand Lega.part
+Bacioni.cand Lega.part
+EncefaloDotati.cand FdI.part
+Corrotto.cand FdI.part
+SensoDiPudore.cand FdI.part
+Patriottismo.cand FdI.part
+Giacobino.cand PD.part
+PseudoSinistra.cand PD.part
+

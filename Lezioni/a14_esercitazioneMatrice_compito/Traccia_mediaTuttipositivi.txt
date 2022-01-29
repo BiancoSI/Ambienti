@@ -1,0 +1,11 @@
+Esercizio 1 Tipo ComPito (Programmazione in C)
+
+Scrivere un programma in C per la gestione di matrici di double, che contenga i seguenti metodi:
+Una funzione create, che riceve due interi (dimensione di righe e colonne), crea una matrice delle dimensioni indicate, e restituisce il suo puntatore.
+Un metodo erase, che azzera tutti gli elementi della matrice.
+Un metodo read per la lettura di una matrice da tastiera.
+Un metodo print per la stampa della matrice su output.
+Un metodo media_tutti_positivi che restituisce (in maniera opportuna usando i puntatori) la media di tutta la matrice e una booleana che risulta vera se
+ la matrice è composta da elementi tutti positivi.
+
+

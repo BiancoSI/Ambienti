@@ -1,0 +1,4 @@
+pippo.txt duplicato nella cartella cartB
+topolino.doc duplicato nella cartella cartB
+rossi.bsk duplicato nella cartella cart2
+verdi.wav duplicato nella cartella cart2

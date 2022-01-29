@@ -1,0 +1,3 @@
+file.txt /home/ziosimonenimalu/Scrivania/Ambienti/Esercizi/DirDiProva
+presenti.sh /home/ziosimonenimalu/Scrivania/Ambienti/Esercizi
+fileedfe.c /home/ziosimonenimalu/Scrivania/Ambienti/Esercizi/DirDiProva

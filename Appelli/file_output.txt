@@ -1,0 +1,6 @@
+file2 ./B
+file3.txt ./B
+file4.txt ./B
+file1.txt ./C
+file2 ./C
+file2 ./C

@@ -1,0 +1,96 @@
+Paolo Zicari
+Linguaggio C
+p.zicari@dimes.unical.it
+
+
+Appunti
+storia
+compilatore gcc
+preprocessore
+introduzione il linguaggio c 
+differenze c java
+inclusione delle librerie
+input e output
+costanti
+vettori statici
+esempi ed esercizi
+
+
+
+
+sudo apt-get install build-essential
+
+
+direttiva al preprocessore
+
+printf("testo formattato", variabili, ...);
+
+conversione di tipi
+conversione implicita
+conversione esplicita tramite casting  (tipo)
+(int)
+
+non esiste il tipo bool o boolean
+
+OUTPUT  printf
+INPUT scanf
+scanf("%d", indirizzo_var);
+
+per ogni variabile c'è un right value ed un left value
+
+int x = 3;
+left value &x  il riferimento alla locazione contenente un intero
+right value 3 è il valore della locazione riferita da &x
+
+%d  intero
+%f  float
+%lf  double
+%c   char
+%s  char[] o char*  (stringhe)
+
+printf("");
+
+/ slash (simbolo di divisione)
+\ back slash 
+\n  carriage return
+\t  tab
+\b back space
+\r torna indietro di un carattere
+
+for e while if 
+
+standard
+c89 c90 c99
+
+COSTANTI
+#define N 10  chiede al preprocessore di sostituire tutte le occorrenze N con 10
+
+con opzione -E nella compilazione otteniamo un codice preprocessato
+gcc -E programma.c > programma_preprocessato.c
+
+Vettori statici
+La dimensione del vettore deve essere nota al tempo della compilazione (costante numerica o definita con #define)
+int v[10];
+v[0]=23;
+
+Vettori dinamici 
+La dimensione del vettore non è necessariamente nota al tempo della compilazione
+
+Il tipo boolean non è predefinito nel linguaggio c
+Utilizziamo una variabile di tipo intero
+0 -> false
+!=0 -> true
+
+
+Programma che ci dice se un elemento si trova all'interno di un vettore fornisce anche la posizione
+
+
+
+
+
+
+
+
+
+
+

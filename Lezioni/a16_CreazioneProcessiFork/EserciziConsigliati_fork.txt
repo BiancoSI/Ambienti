@@ -1,0 +1,17 @@
+Scrivere, compilare e testare i seguenti programmi in C, che utilizzando le system call di Linux, rispettivamente:
+
+1) Crea 1 processo figlio, e il processo padre stampa anche il pid del figlio. 
+2) Crea 1 processo figlio, provare a dichiarare una variabile prima della creazione dei processi, modificarla in entrambi i processi
+    e commentare l'output. 
+3) Crea 1 processo figlio, gestire la corretta terminazione con la wait e la exit (consiglio utilizzare la sleep per far terminare 
+dopo i processi e controllare cosa avviene con e senza wait)
+4)   Crea 1 processo figlio, che esegue un codice con la execl (esempio: /bin/ls). Verificare, con una stampa, cosa succede dopo l'exec.
+5) Creare 2 processi figli (ogni figlio stamperò sono il processo N...)
+6) Creare 1 processo figlio e 1 processo nipote (figlio del figlio)
+7) Estendere la 5 provando a creare N processi figli 
+
+Sequenza suggerita
+Provare in maniera autonoma 1) 2) e 3) 
+Fare il 5) e 7)
+Fare il 6)
+

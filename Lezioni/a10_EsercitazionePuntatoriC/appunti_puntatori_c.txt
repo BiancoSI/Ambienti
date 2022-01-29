@@ -1,0 +1,32 @@
+Programma della lezione
+- Puntatori in C
+- Gestione della memoria
+- Operatori & *
+- Aritmentica dei puntatori
+- Allocazione dinamica della memoria
+
+Puntatori
+
+Problemi che possono sorgere con l'utilizzo dei puntatori
+- Segmentation fault (tentativo di accedere a locazioni di memoria esterni al programma)
+- andare a cambiare erroneamente valori di variabili all'interno del nostro programma
+
+int *p;
+
+
+SEGMENTATION FAULT (da non fare)
+p= (int *)500;
+*p=0;
+
+Aritmetica dei puntatori
+p=p+2;
+
+vettori e puntatori
+
+int v[5];
+
+Allocazione dinamica della memoria
+Heap 
+malloc - free
+creiamo un vettore dinamico
+dopo la free NON BISOGNA UTILIZZARE LA MEMORIA DEALLOCATA

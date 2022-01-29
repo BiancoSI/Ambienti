@@ -1,0 +1,12 @@
+Metodi
+1) Scrivere utilizzando metodi e funzioni, un programma che alloca e legge un  vettore e trova il suo massimo e il suo minimo. 
+
+
+2) Scrivere una funzione che riceva come parametro un puntatore ad un vettore, e restituisce: Vero, se la somma dei numeri pari contenuti nel vettore è maggiore della somma dei numeri dispari, Falso altrimenti.
+
+
+3) Scrivere una funzione trovaMax che trovi il massimo e la posizione del massimo in vettori di double.
+
+
+
+4) Scrivere un metodo che scambia il valore di 4 interi, a, b,c, d, cioè deve scambiare il valore di a con d e quello di b con c.

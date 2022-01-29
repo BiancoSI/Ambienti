@@ -1,0 +1,13 @@
+Amministrare Gnu/Linux di Simone Piccardi
+Architettura Linux, File System e Processi: Pag. 1-5, 28-35 (da par 1.2.3)
+Permessi sui file pag. 42-52  (par. 1.4)
+Wild Cards pagina 78-80 (tranne l'ultima parte sull'espansione dei comandi)
+Redirezione Input Output e Pipe   Pag. 83-88 Pag. 138-141
+
+
+La quinta versione puo' essere acquistata in formato pdf a circa 7 euro (1 pizza).
+
+
+Altri Libri utili:
+Bash Pocket Reference
+
